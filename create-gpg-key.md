@@ -88,3 +88,18 @@ generator a better chance to gain enough entropy.
 ## GUI 앱 사용
 
 ### Windows (gpg3win - Kleopatra)
+- https://www.gpg4win.org/index.html 에서 프로그램을 받아 설치합니다.
+- Kelopatra 프로그램을 사용하겠습니다. 프로그램을 켜고, `New Key Pair` 버튼을 누릅니다.
+![](images/gpg-windows-1.png)
+- 본인의 신원 정보를 입력합니다. 실명과 자주 쓰는 이메일 주소를 입력합니다. 그리고 추가 설정을 위해, `Advanced Settings...` 을 누릅니다.
+![](images/gpg-windows-2.png)
+- 키 유형과 길이, 만료일을 설정해 줍니다. 키 길이는 3072 이상으로 합니다. 4096을 권장합니다.
+![](images/gpg-windows-3.png)
+- 키 정보를 확인한 후, `Create` 를 눌러 키 생성을 합니다.
+![](images/gpg-windows-4.png)
+- 사용할 키 비밀번호를 입력합니다. 그리고 잠시 기다립니다.
+![](images/gpg-windows-5.png)
+- 키가 생성되었습니다.
+![](images/gpg-windows-6.png)
+
+> 2018년 7월 기준, gpg4win 의 Kleopatra 는 키의 기본 해싱 알고리즘을 SHA256 으로 하여 키를 생성합니다. 참고하시기 바랍니다.
