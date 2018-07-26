@@ -27,7 +27,7 @@ default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB
 
 - 아래 명령으로, 키 생성을 시작합니다.
 ```bash
-gpg --gen-key
+gpg --full-generate-key
 ```
 
 - 키 유형은 RSA and RSA 로 합니다.
@@ -89,17 +89,47 @@ generator a better chance to gain enough entropy.
 
 ### Windows (gpg3win - Kleopatra)
 - https://www.gpg4win.org/index.html 에서 프로그램을 받아 설치합니다.
-- Kelopatra 프로그램을 사용하겠습니다. 프로그램을 켜고, `New Key Pair` 버튼을 누릅니다.
+- Kelopatra 프로그램을 사용하겠습니다. 프로그램을 켜고, `New Key Pair` 버튼을 누릅니다.   
 ![](images/gpg-windows-1.png)
-- 본인의 신원 정보를 입력합니다. 실명과 자주 쓰는 이메일 주소를 입력합니다. 그리고 추가 설정을 위해, `Advanced Settings...` 을 누릅니다.
+
+- 본인의 신원 정보를 입력합니다. 실명과 자주 쓰는 이메일 주소를 입력합니다. 그리고 추가 설정을 위해, `Advanced Settings...` 을 누릅니다.   
 ![](images/gpg-windows-2.png)
-- 키 유형과 길이, 만료일을 설정해 줍니다. 키 길이는 3072 이상으로 합니다. 4096을 권장합니다.
+
+- 키 유형과 길이, 만료일을 설정해 줍니다. 키 길이는 3072 이상으로 합니다. 4096을 권장합니다.   
 ![](images/gpg-windows-3.png)
-- 키 정보를 확인한 후, `Create` 를 눌러 키 생성을 합니다.
+
+- 키 정보를 확인한 후, `Create` 를 눌러 키 생성을 합니다.   
 ![](images/gpg-windows-4.png)
-- 사용할 키 비밀번호를 입력합니다. 그리고 잠시 기다립니다.
+
+- 사용할 키 비밀번호를 입력합니다. 그리고 잠시 기다립니다.   
 ![](images/gpg-windows-5.png)
-- 키가 생성되었습니다.
+
+- 키가 생성되었습니다.   
 ![](images/gpg-windows-6.png)
 
 > 2018년 7월 기준, gpg4win 의 Kleopatra 는 키의 기본 해싱 알고리즘을 SHA256 으로 하여 키를 생성합니다. 참고하시기 바랍니다.
+
+### Ubuntu, Debian (Seahorse)
+- 먼저, `~/.gnupg/gpg.conf` 파일에, 아래와 같은 내용을 가장 마지막 줄에 추가합니다.
+    - 키 생성시 키의 해싱 알고리즘 기본값을 정하는 설정입니다.
+```
+personal-digest-preferences SHA512
+cert-digest-algo SHA512
+default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed
+```
+
+- `+` 버튼을 눌러 키 생성을 시작합니다.   
+![](images/linux-seahorse-1.png)
+
+- `PGP 키` 를 선택합니다.   
+![](images/linux-seahorse-2.png)
+
+- 신원 정보를 입력합니다. 이름은 실명을, 이메일은 자주 사용하는 것으로 합니다.
+- 고급 키 옵션에서, 암호화는 RSA, 키 강도를 3072이상(4096을 권장합니디.), 만료일을 약 2년 안으로 합니다.   
+![](images/linux-seahorse-3.png)
+
+- 암호를 지정합니다.   
+![](images/linux-seahorse-4.png)
+
+- 잠시 기다리면, 키가 사진처럼 생성 됩니다.   
+![](images/linux-seahorse-5.png)
