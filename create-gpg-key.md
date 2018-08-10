@@ -85,6 +85,11 @@ generator a better chance to gain enough entropy.
 .................................+++++
 ```
 
+공개키를 키서버에 업로드 하려면 아래와 같이 실햅합니다.
+```bash
+gpg --keyserver <키서버 주소> --send-keys <키ID_또는_핑거프린트>
+```
+
 ## GUI 앱 사용
 
 ### Windows (gpg3win - Kleopatra)
@@ -108,6 +113,10 @@ generator a better chance to gain enough entropy.
 ![](images/gpg-windows-6.png)
 
 > 2018년 7월 기준, gpg4win 의 Kleopatra 는 키의 기본 해싱 알고리즘을 SHA256 으로 하여 키를 생성합니다. 참고하시기 바랍니다.
+
+- 키를 키서버에 업로드 하려면, 먼저 `설정`>`Kleopatra 설정` 으로 이동합니다.
+- `OpenPGP Keyserver` 란에 키서버 주소를 입력한 뒤, 적용하고 확인을 누릅니다.
+- 키서버에 올릴 항목을 우클릭 한 다음, `Publish on Server` 를 눌러 커서버에 업로드 합니다.
 
 ### Ubuntu, Debian (Seahorse)
 - 먼저, `~/.gnupg/gpg.conf` 파일에, 아래와 같은 내용을 가장 마지막 줄에 추가합니다.
@@ -133,3 +142,30 @@ default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB
 
 - 잠시 기다리면, 키가 사진처럼 생성 됩니다.   
 ![](images/linux-seahorse-5.png)
+
+- 키서버에 업로드 하려면 다음을 따릅니다.
+    - 편집 > 기본설정 으로 이동합니다.
+    - "키를 찾는 방법(F)" 에 키서버 목록이 있습니다. 원하는 키서버가 없다면, "추가" 버튼을 이용하여 추가합니다.
+    - 키서버를 새로 추가한 경우 설정 창을 닫았다가 다시 엽니다.
+    - "키를 공개할 곳(P)" 에서 키를 업로드한 키서버를 선택합니다. 그리고 설정창을 닫습니다.
+    - 업로드할 키 항목을 선택하고, 원격 > 키 동기화 및 공개(S)... 를 이용하여 업로드 합니다.
+### MacOS
+- 먼저, `~/.gnupg/gpg.conf` 파일에, 아래와 같은 내용을 가장 마지막 줄에 추가합니다.
+    - 키 생성시 키의 해싱 알고리즘 기본값을 정하는 설정입니다.
+```
+personal-digest-preferences SHA512
+cert-digest-algo SHA512
+default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed
+```
+
+- GPG Suite 를 https://gpgtools.org/ 에서 내려받아 설치합니다. 
+- `New` 를 눌러 키를 생성합니다.
+- 이름, 이메일 주소, 비밀번호, 비밀번호 확인 을 순서대로 입력합니다.
+- 고급옵션을 열고, 키 길이를 최소 3072(4096 이상을 권장합니다.)로 설정합니다.
+- `Generate Key` 를 눌러 키를 생성합니다.
+![](images/macos-1.png)
+
+- 키서버에 올리려면,
+    - GPG Keychain 앱에 포커스를 둔 뒤, 메뉴바에서 GPG Keychain > 설정... 으로 들어갑니다.
+    - 키서버 탭에서 키서버 주소를 변경합니다.
+    - 설정 창을 닫고. 키서버에 보낼 항목을 우클릭 한 뒤, `Send Public Key to Key Server` 를 눌러 키서버에 올립니다.
