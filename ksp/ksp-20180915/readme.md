@@ -4,6 +4,7 @@ GPG Keysigning Party 에 참여 하고자 하시는 분들은 다음과 같은 �
 
 ## 참가자 명단이 나오기 전
 - GPG 키를 준비하세요. 아직 강력한 키가 없다면, [이 문서](../../create-gpg-key.md)를 참고하여 새로 준비합니다.
+    - 키 길이는 최소 3072(4096을 권장합니다), 서명 알고리즘은 SHA256 또는 더 강력한 것(SHA512 권장합니다)을 사용하는 GPG 키를 준비 하셔야 합니다.
 - 공개키를 키서버에 업로드 합니다. 이번 행사에 참석 하시는 분들은, [keyserver.ubuntu.com](https://keyserver.ubuntu.com) 에 업로드 해주세요.
 - 준비된 GPG 키를 [이 문서](../../attending.md)를 참고하여 내보내기 하고, Clearsign 한 뒤, [이 제출 양식](https://goo.gl/forms/UAoVSVp6KDKtRcgG2) 을 이용하여 제출합니다.
     - 양식을 통해 서명된 공개키 블록과, 해당 공개키의 핑거프린트를 제출하게 됩니다.
