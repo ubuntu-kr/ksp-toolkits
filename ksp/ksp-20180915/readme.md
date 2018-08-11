@@ -1,7 +1,7 @@
 # 2018년 9월 우분투한국커뮤니티 서울지역 세미나 키사이닝 파티
 
 GPG Keysigning Party 에 참여 하고자 하시는 분들은 다음과 같은 사항을 미리 준비하세요.  
-문의 사항이 있는 경우, [sukso96100@gmail.com](mailto:sukso96100@gmail.com) 으로 연락해 주세요.
+도움이 필요 하시거나 문의 사항이 있는 경우, 고민 하지 마시고 [sukso96100@gmail.com](mailto:sukso96100@gmail.com) 으로 바로 연락해 주세요.
 
 ## 참가자 명단이 나오기 전
 - GPG 키를 준비하세요. 아직 강력한 키가 없다면, [이 문서](../../create-gpg-key.md)를 참고하여 새로 준비합니다.
