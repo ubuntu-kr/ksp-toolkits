@@ -6,7 +6,7 @@
 ### Ubuntu, Debian 에서 설치
 보통 기본적으로 이미 설치 되어 있습니다.
 ```
-sudo apt install gpg
+sudo apt install gnupg
 ```
 
 ### MacOS 에서 설치
