@@ -1,21 +1,37 @@
 # GPG 키 생성하기
+* 이 문서는 GPG 키를 생성하는 방법을 적은 가이드 문서입니다.
 
-## 터미널에서 생성
-`gpg` 명령어를 사용 가능한 환경 에서 사용 가능한 방법입니다.
-
-### Ubuntu, Debian 에서 설치
-보통 기본적으로 이미 설치 되어 있습니다.
+# 패키지 설치하기
+## Ubuntu 16.04
+gpg 명령어 사용을 위한 패키지 설치
 ```
-sudo apt install gpg
+sudo apt install gnupg
 ```
 
-### MacOS 에서 설치
+## Ubuntu 18.04
+gpg 명령어 사용을 위한 패키지 설치
+```
+sudo apt install gnupg
+```
+
+## Debian, 혹은 다른 Debian 계열의 운영체제
+gpg 명령어 사용을 위한 패키지 설치
+```
+sudo apt install gnupg
+```
+or
+```
+sudo apt-get install gnupg
+```
+
+## Mac OS X 
+gpg 명령어 사용을 위한 패키지 설치
 Homebrew 를 사용하여 설치합니다.
 ```
 brew install gpg
 ```
 
-### 키 생성
+# 키 생성 하기
 
 - 먼저, `~/.gnupg/gpg.conf` 파일에, 아래와 같은 내용을 가장 마지막 줄에 추가합니다.
     - 키 생성시 키의 해싱 알고리즘 기본값을 정하는 설정입니다.
@@ -84,6 +100,8 @@ generator a better chance to gain enough entropy.
 ..........+++++
 .................................+++++
 ```
+
+-> 엔트로 제너레이션 : https://serverfault.com/questions/214605/gpg-does-not-have-enough-entropy
 
 공개키를 키서버에 업로드 하려면 아래와 같이 실햅합니다.
 > 키ID 는 GPG 키 핑거프린트의 마지막 8자리 입니다.
