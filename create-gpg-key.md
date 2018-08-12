@@ -101,6 +101,8 @@ generator a better chance to gain enough entropy.
 .................................+++++
 ```
 
+-> 엔트로 제너레이션 : https://serverfault.com/questions/214605/gpg-does-not-have-enough-entropy
+
 공개키를 키서버에 업로드 하려면 아래와 같이 실햅합니다.
 > 키ID 는 GPG 키 핑거프린트의 마지막 8자리 입니다.
 ```bash
