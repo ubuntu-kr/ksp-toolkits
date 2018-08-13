@@ -20,10 +20,10 @@
 
 ### GPG 키 제출
 
-공개키를 먼저 키서버에 업로드 합니다. 업로드할 키서버는 매 행사마다 다릅니다.
-> 제출하신 공개키가 키서버에 업로드 되어 있고, 해당 키로 공개키 블록이 서명 되어 있어야 행사 담당자가 여러분의 서명을 검증할 수 있습니다.
+공개키를 먼저 키서버에 업로드 합니다. 업로드할 키서버는 매 행사마다 다릅니다.  
 명령행을 이용하여, 제출한 GPG 키의 공개키를 내보냅니다.
-```
+> 제출하신 공개키가 키서버에 업로드 되어 있고, 해당 키로 공개키 블록이 서명 되어 있어야 행사 담당자가 여러분의 서명을 검증할 수 있습니다.  
+```bash
 gpg --armor --export-options export-clean,export-minimal --export <키ID_또는_핑거프린트_공백없이> > <원하는_파일명>
 # 예시 : gpg --armor --export-options export-clean,export-minimal --export DC2742A8 > publickey
 ```
@@ -38,7 +38,7 @@ GUI 앱의 경우, 다음과 같은 방법으로 내보내기 합니다.
     - 키 항목을 선택 후, `Export`를 눌러서 내보냅니다.
 
 그 다음, 공개키 파일을 서명(Clearsign)합니다.
-```
+```bash
 gpg --local-user <키ID_또는_핑거프린트_공백없이> --clearsign <공개키_파일>
 # 예시 : gpg --local-user DC2742A8 --clearsign publickey
 
