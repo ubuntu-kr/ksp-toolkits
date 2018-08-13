@@ -27,7 +27,7 @@
 gpg --armor --export-options export-clean,export-minimal --export <키ID_또는_핑거프린트_공백없이> > <원하는_파일명>
 # 예시 : gpg --armor --export-options export-clean,export-minimal --export DC2742A8 > publickey
 ```
-GUI 앱의 경우,
+GUI 앱의 경우, 다음과 같은 방법으로 내보내기 합니다.
 - Linux(Seahorse)
     - 키 항목을 선택 후, 편집 > 복사
     - 텍스트 편집기를 연 다음, 붙여넣기 하고 해당 내용을 새 텍스트 파일로 저장.
