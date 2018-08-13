@@ -25,6 +25,7 @@
 명령행을 이용하여, 제출한 GPG 키의 공개키를 내보냅니다.
 ```
 gpg --armor --export-options export-clean,export-minimal --export <키ID_또는_핑거프린트_공백없이> > <원하는_파일명>
+# 예시 : gpg --armor --export-options export-clean,export-minimal --export DC2742A8 > publickey
 ```
 GUI 앱의 경우,
 - Linux(Seahorse)
@@ -39,6 +40,8 @@ GUI 앱의 경우,
 그 다음, 공개키 파일을 서명합니다.
 ```
 gpg --local-user <키ID_또는_핑거프린트_공백없이> --clearsign <공개키_파일>
+# 예시 : gpg --local-user DC2742A8 --clearsign publickey
+
 ```
 
 생성된 `<공개키_파일명>.asc` 파일을 연 다음 내용을 이메일 등의 방법으로 제출합니다.
