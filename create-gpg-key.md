@@ -44,6 +44,8 @@ default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB
 - 아래 명령으로, 키 생성을 시작합니다.
 ```bash
 gpg --full-generate-key
+# 또는 gpg --full-gen-key
+# GPG 2.1 이전 버전인 경우(Ubuntu 16.04 이전) gpg --gen-key
 ```
 
 - 키 유형은 RSA and RSA 로 합니다.
