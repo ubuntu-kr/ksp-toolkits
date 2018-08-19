@@ -35,6 +35,7 @@ brew install gpg
 
 - 먼저, `~/.gnupg/gpg.conf` 파일에, 아래와 같은 내용을 가장 마지막 줄에 추가합니다.
     - 키 생성시 키의 해싱 알고리즘 기본값을 정하는 설정입니다.
+    - 해당 파일이 없는 경우, 새로 생성한 후 수정합니다.
 ```
 personal-digest-preferences SHA512
 cert-digest-algo SHA512
@@ -142,6 +143,8 @@ gpg --keyserver <키서버 주소> --send-keys <키ID_또는_핑거프린트>
 ### Ubuntu, Debian (Seahorse)
 - 먼저, `~/.gnupg/gpg.conf` 파일에, 아래와 같은 내용을 가장 마지막 줄에 추가합니다.
     - 키 생성시 키의 해싱 알고리즘 기본값을 정하는 설정입니다.
+    - 해당 파일이 없는 경우, 새로 생성한 후 수정합니다.
+
 ```
 personal-digest-preferences SHA512
 cert-digest-algo SHA512
@@ -173,6 +176,7 @@ default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB
 ### MacOS
 - 먼저, `~/.gnupg/gpg.conf` 파일에, 아래와 같은 내용을 가장 마지막 줄에 추가합니다.
     - 키 생성시 키의 해싱 알고리즘 기본값을 정하는 설정입니다.
+    - 해당 파일이 없는 경우, 새로 생성한 후 수정합니다.
 ```
 personal-digest-preferences SHA512
 cert-digest-algo SHA512
