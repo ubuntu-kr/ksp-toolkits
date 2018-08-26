@@ -13,11 +13,11 @@ GPG Keysigning Party 는 각자의 GPG 키에 대한 Web of Trust(신뢰 망)을
 우리가 진행하는 키사이닝 파티 방식은 [Phil Zimmermann과 Len Sassaman의 Hash Based Method Party](http://www.cryptnet.net/fdp/crypto/keysigning_party/en/keysigning_party.html#hash_based)에 기반하여 조금 변형한 형태 입니다.
 
 ## 참가자 명단이 나오기 전
-- GPG 키를 준비하세요. 아직 강력한 키가 없다면, [이 문서](../../create-gpg-key.md)를 참고하여 새로 준비합니다.
+- GPG 키를 준비하세요. 아직 강력한 키가 없다면, [**이 문서를 참고하여 새로 준비합니다.**](../../create-gpg-key.md)
     - 키 길이는 최소 3072(4096을 권장합니다), 서명 알고리즘은 SHA256 또는 더 강력한 것(SHA512 권장합니다)을 사용하는 GPG 키를 준비 하셔야 합니다.
 - 공개키를 키서버에 업로드 합니다. 이번 행사에 참석 하시는 분들은, [keyserver.ubuntu.com](https://keyserver.ubuntu.com) 에 업로드 해주세요.
-    - 키서버에 업로드 하는 방법은 [동일한 문서(공개키 생성 가이드)](../../create-gpg-key.md)에 같이 기술되어 있습니다.
-- 준비된 GPG 키를 [이 문서](../../attending.md)를 참고하여 내보내기 하고, Clearsign 한 뒤, [이 제출 양식](https://goo.gl/forms/UAoVSVp6KDKtRcgG2) 을 이용하여 제출합니다.
+    - 키서버에 업로드 하는 방법은 [**동일한 문서(공개키 생성 가이드)에 같이 기술되어 있습니다.**](../../create-gpg-key.md)
+- 준비된 GPG 키를 [**이 문서를 참고하여 내보내기 하고,**](../../attending.md) Clearsign 한 뒤, [**이 제출 양식을 이용하여 제출합니다.**](https://goo.gl/forms/UAoVSVp6KDKtRcgG2)
     - 양식을 통해 **서명된(Clearsign된) 공개키 블록**과, **해당 공개키의 핑거프린트**를 제출하게 됩니다.
     - 늦어도 **9월 14일 오후 10시** 까지 모두 제출해 주시기 바랍니다.
     - 양식을 통해 공개키를 제출하시면 양식 응답 사본을 이메일로 받으시게 되며, 받으신 메일을 통해 제출기간 동안 응답 수정이 가능합니다.
