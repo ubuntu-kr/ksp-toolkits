@@ -20,14 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 
 import subprocess, sys
 
-print("=-=-=-=-=-=")
-print('Worksheet generator for GPG Keysigning Party')
-print('Written by Youngbin Han<sukso96100@gmail.com>')
-print("=-=-=-=-=-=")
-
-print("워크시트 제목을 입력하세요.")
-print("Write title of the worksheet.")
-
 howto = """
 참여자 목록 / List of participants
 
@@ -41,7 +33,8 @@ howto = """
 다른 키사이닝 파티 참여자를 만나셨을 떄 하셔야 할 일:
 1. 서로 계산해 온 체크섬이 일치하는지 확인합니다.
 2. 목록에서의 서로의 번호를 확인하고, 목록에 있는 서로의 핑거프린트에 문제가 없는지 확인합니다.
-3. 목록상의 신원 정보와 상대방의 신원정보가 일치하는지 서로 유효한 신분증(정부기관 발급 신분증, 여권 등)을 제시하여 확인합니다.
+3. 목록상의 신원 정보와 상대방의 신원정보가 일치하는지 서로 유효한 신분증
+(정부기관 발급 신분증, 여권 등)을 제시하여 확인합니다.
 4. 신원을 충분히 확인 했다면, 인쇄물의 해당 항목에 체크표시 하여
 해당 항목의 GPG 핑거프린트와 신원을 확인했음을 표시합니다.
 
@@ -54,7 +47,8 @@ Here's what you have to do with this file:
 For each participant:
 1. Compare the hash you computed with the other participant.
 2. Ask if the other participant's gpg fingerprint on the hardcopy is correct.
-3. Verify each other's identity by checking valid ID(Government issued ID, Passport, etc.).
+3. Verify each other's identity by checking 
+valid ID(Government issued ID, Passport, etc.).
 4. If you are satisfied with the identification, mark on your hardcopy that
 the other participant's gpg fingerprint is correct and has been identified.
 
@@ -81,7 +75,6 @@ else:
     userInput = "{}\n{}\n행사 준비: {}\n\n".format(str(sys.argv[2]), str(sys.argv[3]), str(sys.argv[4]))
     userInput += howto
     keyring_result = subprocess.run(['gpg', '--no-default-keyring','--keyring', str(sys.argv[1]), '--list-keys'], capture_output=True, text=True)
-    print(keyring_result.stdout)
     body = keyring_result.stdout.split('----------------------------------')[1]
     splited = body.split('pub ')
     for index, item in enumerate(splited):
