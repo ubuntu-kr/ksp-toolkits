@@ -24,7 +24,7 @@ howto = """
 참여자 목록 / List of participants
 
 본 파일로 하셔야 할 일:
-1. 본 파일을 인새하세요.
+1. 본 파일을 인쇄하세요.
 2. 본 파일의 SHA256 체크섬을 계산하세요.
 3. 본 파일과 같이 제공된 체크섬 파일에 있는 값과 비교합니다.
 4. 계산한 체크섬을 인쇄물의 체크섬 기록란에 씁니다.
@@ -79,5 +79,5 @@ else:
     splited = body.split('pub ')
     for index, item in enumerate(splited):
         # print("=====================
-        userInput += "\n#{} [ ] 핑거프린트 확인(Fingerprint OK) [ ] 신원 확인(ID OK)\npub{}".format(index, item)
+        userInput += "\n#{}  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)\npub{}".format(index, item)
     print(userInput)
