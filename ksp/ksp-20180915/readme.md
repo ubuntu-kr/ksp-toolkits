@@ -30,6 +30,7 @@ GPG Keysigning Party 는 각자의 GPG 키에 대한 Web of Trust(신뢰 망)을
 - ksp-20180915.txt.asc, ksp-20180915.txt.sha256.asc 파일은 ksp-20180915.txt, ksp-20180915.txt.sha256 파일에 대한 GPG 서명입니다. 서명이 올바른지 검증하세요.
     - 서명을 검증하려면 먼저 서명에 쓰인 GPG 키의 공개키를 키서버에서 불러옵니다.
         - 핑거프린트가 `D8C8 103B 16C5 6E34 B56F 9A42 30B7 29F7 1213 8599` 인 GPG 키로 서명될 예정이며, keyserver.ubuntu.com 에서 불러올 수 있습니다.
+        - `gpg --keyserver keyserver.ubuntu.com --recv-keys D8C8103B16C56E34B56F9A4230B729F712138599`
             - [해당 GPG 키 정보 보기](http://keyserver.ubuntu.com/pks/lookup?op=vindex&search=0x30B729F712138599)
     - Windows(Kleopatra) : Decrypt/Verify... 를 눌러서 검증할 파일을 열어 검증을 진행합니다.
     - MacOS(GPG Suite) : 검증할 파일을 우클릭 한 다름, 서비스 > OpenPGP: Verify Signature of File 를 눌러 진행합니다.
