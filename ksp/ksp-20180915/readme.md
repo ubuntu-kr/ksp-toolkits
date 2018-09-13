@@ -33,7 +33,9 @@ GPG Keysigning Party 는 각자의 GPG 키에 대한 Web of Trust(신뢰 망)을
             - [해당 GPG 키 정보 보기](http://keyserver.ubuntu.com/pks/lookup?op=vindex&search=0x30B729F712138599)
     - Windows(Kleopatra) : Decrypt/Verify... 를 눌러서 검증할 파일을 열어 검증을 진행합니다.
     - MacOS(GPG Suite) : 검증할 파일을 우클릭 한 다름, 서비스 > OpenPGP: Verify Signature of File 를 눌러 진행합니다.
-    - Linux: `gpg --verify-files ksp-20180915.txt.asc ksp-20180915.txt.sha256.asc`
+    - Linux: 
+        - `gpg --verify < ksp-20180915.txt.asc`
+        - `gpg --verify < ksp-20180915.txt.sha256.asc`
 - 체크섬이 일치하고, 서명이 올바르다면. 이제 ksp-20180915.txt 파일을 프린터로 인쇄합니다.
 - 인쇄한 종이에 본인이 계산한 SHA256 체크섬을 펜으로 직접 옮겨 적습니다.
 
