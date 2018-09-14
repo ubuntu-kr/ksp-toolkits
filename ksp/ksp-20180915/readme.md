@@ -19,7 +19,7 @@ GPG Keysigning Party 는 각자의 GPG 키에 대한 Web of Trust(신뢰 망)을
     - 키서버에 업로드 하는 방법은 [**동일한 문서(공개키 생성 가이드)에 같이 기술되어 있습니다.**](../../create-gpg-key.md)
 - 준비된 GPG 키를 [**이 문서를 참고하여 내보내기 하고, Clearsign 한 뒤,**](../../attending.md) [**이 제출 양식을 이용하여 제출합니다.**](https://goo.gl/forms/UAoVSVp6KDKtRcgG2)
     - 양식을 통해 **서명된(Clearsign된) 공개키 블록**과, **해당 공개키의 핑거프린트**를 제출하게 됩니다.
-    - 늦어도 **9월 14일 오후 10시** 까지 모두 제출해 주시기 바랍니다.
+    - 늦어도 **9월 15일 오전 0시 20분** 까지 모두 제출해 주시기 바랍니다.
     - 양식을 통해 공개키를 제출하시면 양식 응답 사본을 이메일로 받으시게 되며, 받으신 메일을 통해 제출기간 동안 응답 수정이 가능합니다.
 
 ## 참가자 명단이 나온 후
@@ -30,10 +30,13 @@ GPG Keysigning Party 는 각자의 GPG 키에 대한 Web of Trust(신뢰 망)을
 - ksp-20180915.txt.asc, ksp-20180915.txt.sha256.asc 파일은 ksp-20180915.txt, ksp-20180915.txt.sha256 파일에 대한 GPG 서명입니다. 서명이 올바른지 검증하세요.
     - 서명을 검증하려면 먼저 서명에 쓰인 GPG 키의 공개키를 키서버에서 불러옵니다.
         - 핑거프린트가 `D8C8 103B 16C5 6E34 B56F 9A42 30B7 29F7 1213 8599` 인 GPG 키로 서명될 예정이며, keyserver.ubuntu.com 에서 불러올 수 있습니다.
+        - `gpg --keyserver keyserver.ubuntu.com --recv-keys D8C8103B16C56E34B56F9A4230B729F712138599`
             - [해당 GPG 키 정보 보기](http://keyserver.ubuntu.com/pks/lookup?op=vindex&search=0x30B729F712138599)
     - Windows(Kleopatra) : Decrypt/Verify... 를 눌러서 검증할 파일을 열어 검증을 진행합니다.
     - MacOS(GPG Suite) : 검증할 파일을 우클릭 한 다름, 서비스 > OpenPGP: Verify Signature of File 를 눌러 진행합니다.
-    - Linux: `gpg --verify-files ksp-20180915.txt.asc ksp-20180915.txt.sha256.asc`
+    - Linux: 
+        - `gpg --verify < ksp-20180915.txt.asc`
+        - `gpg --verify < ksp-20180915.txt.sha256.asc`
 - 체크섬이 일치하고, 서명이 올바르다면. 이제 ksp-20180915.txt 파일을 프린터로 인쇄합니다.
 - 인쇄한 종이에 본인이 계산한 SHA256 체크섬을 펜으로 직접 옮겨 적습니다.
 
@@ -53,11 +56,11 @@ GPG Keysigning Party 는 각자의 GPG 키에 대한 Web of Trust(신뢰 망)을
 ## 파일 목록
 
 ### List #1
-- [ksp-20180915.txt](ksp-20180915.txt)
+- [ksp-20180915.txt](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20180915/ksp-20180915.txt)
     - 워크시트 파일(참가자 공개키 정보, 체크섬 기입란 등 포함)
-- [ksp-20180915.txt.asc](ksp-20180915.txt.asc)
+- [ksp-20180915.txt.asc](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20180915/ksp-20180915.txt.asc)
     - ksp-20180915.txt 파일을 GPG 키 `D8C8 103B 16C5 6E34 B56F 9A42 30B7 29F7 1213 8599` 로 clearsign 한 파일
-- [ksp-20180915.txt.sha256](ksp-20180915.txt.sha256)
+- [ksp-20180915.txt.sha256](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20180915/ksp-20180915.txt.sha256)
     - ksp-20180915.txt 파일의 SHA256 체크섬을 기록한 파일
-- [ksp-20180915.txt.sha256.asc](ksp-20180915.txt.sha256.asc)
+- [ksp-20180915.txt.sha256.asc](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20180915/ksp-20180915.txt.sha256.asc)
     - ksp-20180915.txt.sha256 파일을 GPG 키 `D8C8 103B 16C5 6E34 B56F 9A42 30B7 29F7 1213 8599` 로 clearsign 한 파일
