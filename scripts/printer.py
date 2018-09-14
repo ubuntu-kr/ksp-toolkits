@@ -30,7 +30,7 @@ howto = """
 4. 계산한 체크섬을 인쇄물의 체크섬 기록란에 씁니다.
 5. 인쇄물, 신분증, 필기구를 지참하여 행사에 참석합니다.
 
-다른 키사이닝 파티 참여자를 만나셨을 떄 하셔야 할 일:
+다른 키사이닝 파티 참여자를 만나셨을 때 하셔야 할 일:
 1. 서로 계산해 온 체크섬이 일치하는지 확인합니다.
 2. 목록에서의 서로의 번호를 확인하고, 목록에 있는 서로의 핑거프린트에 문제가 없는지 확인합니다.
 3. 목록상의 신원 정보와 상대방의 신원정보가 일치하는지 서로 유효한 신분증
@@ -75,7 +75,7 @@ else:
     userInput = "{}\n{}\n행사 준비: {}\n\n".format(str(sys.argv[2]), str(sys.argv[3]), str(sys.argv[4]))
     userInput += howto
     keyring_result = subprocess.run(['gpg', '--no-default-keyring','--keyring', str(sys.argv[1]), '--list-keys'], capture_output=True, text=True)
-    body = keyring_result.stdout.split('----------------------------------')[1]
+    body = keyring_result.stdout.split('--------------------------------')[1]
     splited = body.split('pub ')
     for index, item in enumerate(splited):
         # print("=====================
