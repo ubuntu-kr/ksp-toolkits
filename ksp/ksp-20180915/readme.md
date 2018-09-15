@@ -32,14 +32,15 @@ GPG Keysigning Party 는 각자의 GPG 키에 대한 Web of Trust(신뢰 망)을
 - 본 문서의 **파일 목록** 색션에 있는 파일을 모두 다운로드 합니다.
 - 각 참가자 목록 파일(`*.txt`)의 SHA256 체크섬을 계산한 후, 각 참가자 목록 파일에 대한 체크섬 파일(`*.txt.sha256`)에 포함된 체크섬과 일치하는지 확인합니다.
     - 다음 명령행을 실행하여 체크섬을 계산합니다: `sha256sum (파일명)`
-    - 실행 예사: `sha256sum ksp-20180915-2.txt`
+    - 실행 예시: `sha256sum ksp-20180915-2.txt`
+    - 체크섬 일치 확인 실행 예시: `sha256sum ksp-20180915-2.txt | diff ksp-20180915-2.txt.sha256 -` (아무 내용도 뜨지 않아야 함)
 - 각 참가자 목록 파일에 대한 서명 파일(`*.txt.asc`)과 각 참가자 목록 파일의 체크섬 파일에 대한 서명 파일(`*.txt.sha256.asc`)의 서명이 올바른지 검증하세요.
     - 서명을 검증하려면 먼저 서명에 쓰인 GPG 키의 공개키를 키서버에서 불러옵니다.
         - 핑거프린트가 `D8C8 103B 16C5 6E34 B56F 9A42 30B7 29F7 1213 8599` 인 GPG 키로 서명될 예정이며, keyserver.ubuntu.com 에서 불러올 수 있습니다.
         - `gpg --keyserver keyserver.ubuntu.com --recv-keys D8C8103B16C56E34B56F9A4230B729F712138599`
             - [해당 GPG 키 정보 보기](http://keyserver.ubuntu.com/pks/lookup?op=vindex&search=0x30B729F712138599)
     - Windows(Kleopatra) : Decrypt/Verify... 를 눌러서 검증할 파일을 열어 검증을 진행합니다.
-    - MacOS(GPG Suite) : 검증할 파일을 우클릭 한 다름, 서비스 > OpenPGP: Verify Signature of File 를 눌러 진행합니다.
+    - MacOS(GPG Suite) : 검증할 파일을 우클릭 한 다음, 서비스 > OpenPGP: Verify Signature of File 를 눌러 진행합니다.
     - Linux: 
         - 다음 명령행을 실행하여 검증합니다.: `gpg --verify < (파일명)`
         - 실행 예시: `gpg --verify < ksp-20180915.txt.sha256.asc`
