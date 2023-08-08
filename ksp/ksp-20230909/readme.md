@@ -14,6 +14,9 @@ OpenPGP Keysigning Party 는 각자의 GPG 키에 대한 Web of Trust(신뢰 망
 우리가 진행하는 키사이닝 파티 방식은 [Phil Zimmermann과 Len Sassaman의 Hash Based Method Party](http://www.cryptnet.net/fdp/crypto/keysigning_party/en/keysigning_party.html#hash_based)에 기반하여 조금 변형한 형태 입니다.
 
 ## 참가자 명단이 나오기 전
+
+> 문서 가이드만으로 이해 및 준비가 어려운 경우, [동영상 가이드](https://youtu.be/PrPxmbv8uHI)를 시청 하시면서 준비 해 보실 수 있습니다.
+
 - GPG 키를 준비하세요. 아직 강력한 키가 없다면, [**이 문서를 참고하여 새로 준비합니다.**](../../create-gpg-key.md)
     - 키 길이는 최소 3072(4096을 권장합니다), 서명 알고리즘은 SHA256 또는 더 강력한 것(SHA512 권장합니다)을 사용하는 GPG 키를 준비 하셔야 합니다.
 - 공개키를 키서버에 업로드 합니다. 이번 행사에 참석 하시는 분들은, [keyserver.ubuntu.com](https://keyserver.ubuntu.com) 에 업로드 해주세요.
