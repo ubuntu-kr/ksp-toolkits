@@ -1,6 +1,6 @@
-# UbuCon Korea 2023 - GPG 키사이닝 파티
+# UbuCon Korea 2023 - OpenPGP 키사이닝 파티
 
-GPG Keysigning Party 에 참여 하고자 하시는 분들은 다음과 같은 사항을 미리 준비하세요.  
+OpenPGP Keysigning Party 에 참여 하고자 하시는 분들은 다음과 같은 사항을 미리 준비하세요.  
 도움이 필요 하시거나 문의 사항이 있는 경우, 고민 하지 마시고 [youngbin@ubuntu-kr.org](mailto:youngbin@ubuntu-kr.org) 으로 바로 연락해 주세요.
 > 이번 키사이닝 파티는 UbuCon Korea 2023 프로그램의 일부로, 티켓 구입 하시고 오프라인으로 참여 하셔야 참여 가능합니다. [티켓은 여기에서 구입 가능합니다.](https://2023.ubuntu-kr.org/tickets/)
 
@@ -9,7 +9,7 @@ PGP(Pretty Good Privacy) 는 이메일이나 파일 등을 암호화 하거나 �
 GPG(GNU Privacy Guard) 는 PGP 의 OpenPGP 표준의 자유/오픈소스 구현체이며 오늘날 대부분의 리눅스 배포판에서 사용 가능합니다.
 PGP(혹은 GPG) 는 이메일과 파일 암호화에도 많이 사용되지만, 오늘날 오픈소스 프로젝트에서 바이너리와 패키지 그리고 패치파일이나 커밋에 서명을 하여 본인이 한 작업물임을 보증되도록 하기 위해 사용 되기도 합니다.
 
-GPG Keysigning Party 는 각자의 GPG 키에 대한 Web of Trust(신뢰 망)을 구축하는 것을 목적으로 하는 행사입니다.
+OpenPGP Keysigning Party 는 각자의 GPG 키에 대한 Web of Trust(신뢰 망)을 구축하는 것을 목적으로 하는 행사입니다.
 참여자들이 서로의 신원을 꼼꼼히 확인한 후 서로의 GPG 공개키에 서명을 해 주어 신뢰를 쌓는 형태입니다.
 우리가 진행하는 키사이닝 파티 방식은 [Phil Zimmermann과 Len Sassaman의 Hash Based Method Party](http://www.cryptnet.net/fdp/crypto/keysigning_party/en/keysigning_party.html#hash_based)에 기반하여 조금 변형한 형태 입니다.
 
