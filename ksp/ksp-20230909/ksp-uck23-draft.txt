@@ -1,0 +1,169 @@
+UbuCon Korea 2023
+OpenPGP Keysigning Party
+행사 준비: 한영빈(Youngbin Han)<sukso96100@gmail.com>
+
+
+참여자 목록 / List of participants
+
+본 파일로 하셔야 할 일:
+1. 본 파일을 인쇄하세요.
+2. 본 파일의 SHA256 체크섬을 계산하세요.
+3. 본 파일과 같이 제공된 체크섬 파일에 있는 값과 비교합니다.
+4. 계산한 체크섬을 인쇄물의 체크섬 기록란에 씁니다.
+5. 인쇄물, 신분증, 필기구를 지참하여 행사에 참석합니다.
+
+다른 키사이닝 파티 참여자를 만나셨을 때 하셔야 할 일:
+1. 서로 계산해 온 체크섬이 일치하는지 확인합니다.
+2. 목록에서의 서로의 번호를 확인하고, 목록에 있는 서로의 핑거프린트에 문제가 없는지 확인합니다.
+3. 목록상의 신원 정보와 상대방의 신원정보가 일치하는지 서로 유효한 신분증
+(정부기관 발급 신분증, 여권 등)을 제시하여 확인합니다.
+4. 신원을 충분히 확인 했다면, 인쇄물의 해당 항목에 체크표시 하여
+해당 항목의 GPG 핑거프린트와 신원을 확인했음을 표시합니다.
+
+Here's what you have to do with this file:
+1. Print this file to paper.
+2. Compute this file's SHA256 checksum
+3. fill in the hash values on the printout.
+4. Bring the printout, a pen, and proof of identity to the keysigning.
+
+For each participant:
+1. Compare the hash you computed with the other participant.
+2. Ask if the other participant's gpg fingerprint on the hardcopy is correct.
+3. Verify each other's identity by checking 
+valid ID(Government issued ID, Passport, etc.).
+4. If you are satisfied with the identification, mark on your hardcopy that
+the other participant's gpg fingerprint is correct and has been identified.
+
+SHA256 Checksum / SHA256 체크섬 :
+
+____________________________________________________________________ [ ]
+
+#0  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub
+#1  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2018-07-01 [SC] [expires: 2024-11-03]
+      D8C8103B16C56E34B56F9A4230B729F712138599
+uid           [ unknown] Youngbin Han <sukso96100@gmail.com>
+uid           [ unknown] Youngbin Han <ybhan@ubuntu.com>
+uid           [ unknown] Youngbin Han <youngbin@ubuntu-kr.org>
+
+
+#2  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-10 [SC] [expires: 2025-08-09]
+      E833BCCB7D9F2F205B4E2EC18C1A1D3ED8672E87
+uid           [ unknown] Sang Woon Lee <ble2417@naver.com>
+sub   rsa4096 2023-08-10 [E] [expires: 2025-08-09]
+
+
+#3  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-11 [SC] [expires: 2025-08-10]
+      08168EA1D45D2F2B3D6068F130C0890263334880
+uid           [ unknown] kimjuho (GPG key for keysigning-party on Ubucon2023) <juho_kim@outlook.com>
+sub   rsa4096 2023-08-11 [E] [expires: 2025-08-10]
+
+
+#4  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-12 [SC] [expires: 2025-08-11]
+      9DE6D91259AB67BC06279B8240EA294E7B1E2CE9
+uid           [ unknown] 이동원 (Dongwon Lee; 李東源(イ ドンウォン)) <wva3cdae@gmail.com>
+sub   rsa4096 2023-08-12 [E] [expires: 2025-08-11]
+
+
+#5  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-16 [SC] [expires: 2025-08-15]
+      CF639E181A7A8A1CA81CBD9F396086721FAB72C2
+uid           [ unknown] Minhyeok Park <pmh_only@pmh.codes>
+sub   rsa4096 2023-08-16 [E] [expires: 2025-08-15]
+
+
+#6  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-17 [SC] [expires: 2025-08-16]
+      9667936454502298F40C1C2337DAA6AA64C937A9
+uid           [ unknown] Gyeongtaek Kim <kwabang2827@gmail.com>
+sub   rsa4096 2023-08-17 [E] [expires: 2025-08-16]
+
+
+#7  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-19 [SC] [expires: 2025-08-18]
+      89CB49D35FB068467F48F7BC97859FD125082A88
+uid           [ unknown] 김수빈 <subib21@naver.com>
+sub   rsa4096 2023-08-19 [E] [expires: 2025-08-18]
+
+
+#8  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-21 [SC] [expires: 2025-08-20]
+      066A6F29D0176EDC06ABE03738C4B304A3688293
+uid           [ unknown] Jonghee Son <zzongaone@gmail.com>
+sub   rsa4096 2023-08-21 [E] [expires: 2025-08-20]
+
+
+#9  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-21 [SC] [expires: 2025-08-20]
+      41ECBA718CED93927106766E22B6CE20B019A105
+uid           [ unknown] yongmin kwon <snowmerak@outlook.com>
+sub   rsa4096 2023-08-21 [E] [expires: 2025-08-20]
+
+
+#10  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-21 [SC] [expires: 2025-08-20]
+      F4269F0E387AD7324D3D3A1C5B40F33367817C88
+uid           [ unknown] Minwoo Lee <dlalsdn1009@naver.com>
+sub   rsa4096 2023-08-21 [E] [expires: 2025-08-20]
+
+
+#11  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-21 [SC] [expires: 2025-08-20]
+      099BFBFE39C5DB900935E2CA1A95EAF33358058C
+uid           [ unknown] Doyeon Kim <markgod0419@gmail.com>
+sub   rsa4096 2023-08-21 [E] [expires: 2025-08-20]
+
+
+#12  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-21 [SC] [expires: 2025-08-20]
+      6BF91BD2C297B128AE47E2A07BC7D8CCA0B5629F
+uid           [ unknown] Jihun Lee <jihunaidenlee@gmail.com>
+sub   rsa4096 2023-08-21 [E] [expires: 2025-08-20]
+
+
+#13  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-21 [SC] [expires: 2025-08-20]
+      9368A4D722E27EE439F92526C3949A0455A1CE2D
+uid           [ unknown] Nayeon Keum (Macbook Pro 2022) <rmaskdus0208@gmail.com>
+sub   rsa4096 2023-08-21 [E] [expires: 2025-08-20]
+
+
+#14  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-21 [SC] [expires: 2025-08-20]
+      800F67ED077E68B8AAB7BC104960A8FE726C1986
+uid           [ unknown] lee hosu <hosu4549@gmail.com>
+sub   rsa4096 2023-08-21 [E] [expires: 2025-08-20]
+
+
+#15  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-03-30 [SC] [expires: 2033-03-27]
+      7E8541A9F07D5D11CA4D92FBB428317C7CF95B09
+uid           [ unknown] Mun Jun Sang <moon@ubuntu-kr.org>
+uid           [ unknown] Mun Jun Sang <mun.js@aol.com>
+
+
+#16  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-26 [SC] [expires: 2025-08-25]
+      F94503480DA0236C1295FA27E98526802E50290D
+uid           [ unknown] Sangbin Lim <mcpe9869@gmail.com>
+sub   rsa4096 2023-08-26 [E] [expires: 2025-08-25]
+
+
+#17  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa3072 2023-04-01 [SC]
+      66651AF4573954997B510171F028FDB62DD65085
+uid           [ unknown] Yeonguk Choo (Yeonguk's GPG key) <choo121600@gmail.com>
+sub   rsa3072 2023-04-01 [E]
+
+
+#18  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-27 [SC] [expires: 2025-08-26]
+      DB1C81CE381EE92C38FF1C134418B9CB08A790FA
+uid           [ unknown] Seongju Choe <krissvector58@gmail.com>
+sub   rsa4096 2023-08-27 [E] [expires: 2025-08-26]
+
+
