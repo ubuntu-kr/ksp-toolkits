@@ -167,3 +167,11 @@ uid           [ unknown] Seongju Choe <krissvector58@gmail.com>
 sub   rsa4096 2023-08-27 [E] [expires: 2025-08-26]
 
 
+#19  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  nistp384 2022-11-10 [SC] [expires: 2027-11-09]
+      1CBA271BBA41437115A778E5220CC17AA79A0AEA
+uid           [ unknown] Euiseo Cha (zeroday0619 Signing Key v2) <zeroday0619_dev@outlook.com>
+sub   nistp384 2022-11-10 [A] [expires: 2027-11-09]
+sub   nistp384 2022-11-10 [E] [expires: 2027-11-09]
+
+
