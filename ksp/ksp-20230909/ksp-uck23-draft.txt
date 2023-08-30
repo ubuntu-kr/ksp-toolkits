@@ -182,3 +182,30 @@ uid           [ unknown] Seongsoo Cho <ppiyakk2@printf.kr>
 sub   rsa4096 2023-08-26 [E] [expires: 2025-08-25]
 
 
+#21  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-05-13 [SC] [expires: 2025-05-13]
+      F8DA8CA189FC20372B2CCAB24DD1010900ED6253
+uid           [ unknown] Jung Hoehyeong (Jung Hoehyeong (Hothead Jung)) <commaniakr@gmail.com>
+sub   rsa4096 2023-05-13 [E] [expires: 2025-05-13]
+
+
+#22  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-29 [SC] [expires: 2025-08-28]
+      86796E9A032052AE09DAAC3A695F97BA8A1B7A9D
+uid           [ unknown] Hyunjun Shin <hyunjun002@kakao.com>
+sub   rsa4096 2023-08-29 [E] [expires: 2025-08-28]
+
+
+#23  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-30 [SC] [expires: 2027-08-30]
+      41CFBDADEDE99675A45F84CE5208AD035BF9EBEE
+uid           [ unknown] Dong'd3'Sam PARK (at the APEX!) <d3@linux.com>
+sub   rsa4096 2023-08-30 [E] [expires: 2027-08-30]
+
+
+#24  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-21 [SC] [expires: 2025-08-20]
+      9CAB1FCDCA7FFD0FF465F82A6E9B8D18FBF9A2C6
+uid           [ unknown] Gusam Park <gusam.park@dotnetdev.kr>
+sub   rsa4096 2023-08-21 [E] [expires: 2025-08-20]
+
