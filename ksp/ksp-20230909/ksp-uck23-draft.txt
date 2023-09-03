@@ -295,3 +295,10 @@ pub  rsa4096 2023-09-03 [SC]
 uid           [ unknown] Tae Yong Lee <tyl1996@naver.com>
 sub   rsa4096 2023-09-03 [E]
 
+
+#37  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-02 [SC] [expires: 2025-09-01]
+      91A81DECC6D308721595D2A13368201A80BB0090
+uid           [ unknown] WonGyeong LEE <wongyeong.tech@gmail.com>
+sub   rsa4096 2023-09-02 [E] [expires: 2025-09-01]
+
