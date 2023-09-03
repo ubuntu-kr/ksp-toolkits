@@ -246,3 +246,52 @@ pub  rsa4096 2023-08-31 [SC] [expires: 2025-08-30]
 uid           [ unknown] Minseo Kim <kim-west00@naver.com>
 sub   rsa4096 2023-08-31 [E] [expires: 2025-08-30]
 
+
+#30  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa2048 2023-08-27 [SC] [expires: 2024-09-14]
+      8033393EA7CF5C301B401D4B98B7D34E7D4ACB84
+uid           [ unknown] mireu-lab (UbuCon 2023) <limmireu1214@gmail.com>
+sub   rsa2048 2023-08-27 [E] [expires: 2024-09-14]
+
+
+#31  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-08-31 [SC] [expires: 2025-08-30]
+      6FBDBD99F6254D51BAA477367C734475A8E80019
+uid           [ unknown] Hyeonseok Kim <dan@rpm.moe>
+sub   rsa4096 2023-08-31 [E] [expires: 2025-08-30]
+
+
+#32  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2022-12-04 [SC] [expires: 2025-12-03]
+      42C71A16378C9227E2064F26C67E78A0FAAD5C87
+uid           [ unknown] Minseong Cho <mldd.kor@gmail.com>
+sub   rsa4096 2022-12-04 [E] [expires: 2025-12-03]
+
+
+#33  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-01 [SC] [expires: 2025-08-31]
+      EF510E2BDF7A8928FC76F7A218CA8CF64F04E25B
+uid           [ unknown] Kim Jaeyeong <wodudkim1031@gmail.com>
+sub   rsa4096 2023-09-01 [E] [expires: 2025-08-31]
+
+
+#34  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-02 [SC] [expires: 2025-09-01]
+      4E866E53CEBB7457D1E372245D7A312C7BA451F3
+uid           [ unknown] You Changseok <aloha@qbqi.dev>
+sub   rsa4096 2023-09-02 [E] [expires: 2025-09-01]
+
+
+#35  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-02 [SC] [expires: 2025-09-01]
+      3DD714FEDB1C06AF8D92C4485E16100FB64FEF91
+uid           [ unknown] Hyeonjae Kwon <href.hjk@gmail.com>
+sub   rsa4096 2023-09-02 [E] [expires: 2025-09-01]
+
+
+#36  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-03 [SC]
+      B72860CA69EE5DC840DBDCAEF3B33EE64C531112
+uid           [ unknown] Tae Yong Lee <tyl1996@naver.com>
+sub   rsa4096 2023-09-03 [E]
+
