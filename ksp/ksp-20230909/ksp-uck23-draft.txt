@@ -366,3 +366,10 @@ pub  rsa4096 2023-09-05 [SC] [expires: 2025-09-04]
 uid           [ unknown] Kanghee Lee <ganghe74@gmail.com>
 sub   rsa4096 2023-09-05 [E] [expires: 2025-09-04]
 
+
+#47  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-05 [SC] [expires: 2025-09-04]
+      C8D846EA220D7B0E5EAD7291B12DCFBDF863FC03
+uid           [ unknown] Kim Hyeoncheol (Software engineer in South Korea and Singapore) <effectmix@gmail.com>
+sub   rsa4096 2023-09-05 [E] [expires: 2025-09-04]
+
