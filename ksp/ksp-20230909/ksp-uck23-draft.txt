@@ -373,3 +373,9 @@ pub  rsa4096 2023-09-05 [SC] [expires: 2025-09-04]
 uid           [ unknown] Kim Hyeoncheol (Software engineer in South Korea and Singapore) <effectmix@gmail.com>
 sub   rsa4096 2023-09-05 [E] [expires: 2025-09-04]
 
+
+#48  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-05 [SC] [expires: 2025-09-04]
+      A0B4C3DFA4A4E30BBBAD49B8831AE56791D3F673
+uid           [ unknown] lee young bin <dudqls4019@gmail.com>
+
