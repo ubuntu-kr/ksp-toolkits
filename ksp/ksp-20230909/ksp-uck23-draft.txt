@@ -1,6 +1,6 @@
 UbuCon Korea 2023
 OpenPGP Keysigning Party
-행사 준비: 한영빈(Youngbin Han)<sukso96100@gmail.com>
+행사 준비: 한영빈(Youngbin Han) <ybhan@ubuntu.com>
 
 
 참여자 목록 / List of participants
@@ -9,7 +9,7 @@ OpenPGP Keysigning Party
 1. 본 파일을 인쇄하세요.
 2. 본 파일의 SHA256 체크섬을 계산하세요.
 3. 본 파일과 같이 제공된 체크섬 파일에 있는 값과 비교합니다.
-4. 계산한 체크섬을 인쇄물의 체크섬 기록란에 씁니다.
+4. 계산한 체크섬을 인쇄물의 체크섬 기록란에 수기로 씁니다.
 5. 인쇄물, 신분증, 필기구를 지참하여 행사에 참석합니다.
 
 다른 키사이닝 파티 참여자를 만나셨을 때 하셔야 할 일:
@@ -23,8 +23,9 @@ OpenPGP Keysigning Party
 Here's what you have to do with this file:
 1. Print this file to paper.
 2. Compute this file's SHA256 checksum
-3. fill in the hash values on the printout.
-4. Bring the printout, a pen, and proof of identity to the keysigning.
+3. Compare the computed checksum with the checksum file provided.
+4. Fill in the hash values on the printout.
+5. Bring the printout, a pen, and proof of identity to the keysigning.
 
 For each participant:
 1. Compare the hash you computed with the other participant.
@@ -36,7 +37,7 @@ the other participant's gpg fingerprint is correct and has been identified.
 
 SHA256 Checksum / SHA256 체크섬 :
 
-____________________________________________________________________ [ ]
+_________________________________________________________________________ [ ]
 
 #0  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
 pub
