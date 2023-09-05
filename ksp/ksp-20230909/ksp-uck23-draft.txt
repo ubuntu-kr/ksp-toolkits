@@ -284,21 +284,70 @@ sub   rsa4096 2023-09-02 [E] [expires: 2025-09-01]
 
 #35  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
 pub  rsa4096 2023-09-02 [SC] [expires: 2025-09-01]
+      91A81DECC6D308721595D2A13368201A80BB0090
+uid           [ unknown] WonGyeong LEE <wongyeong.tech@gmail.com>
+sub   rsa4096 2023-09-02 [E] [expires: 2025-09-01]
+
+
+#36  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-02 [SC] [expires: 2025-09-01]
       3DD714FEDB1C06AF8D92C4485E16100FB64FEF91
 uid           [ unknown] Hyeonjae Kwon <href.hjk@gmail.com>
 sub   rsa4096 2023-09-02 [E] [expires: 2025-09-01]
 
 
-#36  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+#37  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
 pub  rsa4096 2023-09-03 [SC]
       B72860CA69EE5DC840DBDCAEF3B33EE64C531112
 uid           [ unknown] Tae Yong Lee <tyl1996@naver.com>
 sub   rsa4096 2023-09-03 [E]
 
 
-#37  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
-pub  rsa4096 2023-09-02 [SC] [expires: 2025-09-01]
-      91A81DECC6D308721595D2A13368201A80BB0090
-uid           [ unknown] WonGyeong LEE <wongyeong.tech@gmail.com>
-sub   rsa4096 2023-09-02 [E] [expires: 2025-09-01]
+#38  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-03 [SC] [expires: 2025-09-02]
+      82F027654D4E78B56E670B0B95D248C8B374B118
+uid           [ unknown] So Hyun Park <hey.park.so@gmail.com>
+sub   rsa4096 2023-09-03 [E] [expires: 2025-09-02]
+
+
+#39  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-04 [SC] [expires: 2023-09-18]
+      08003043900D4D4818917117B31D3A2AA9A05E98
+uid           [ unknown] Hanseung Kim <sideca7777@gmail.com>
+sub   rsa4096 2023-09-04 [E] [expires: 2023-09-18]
+
+
+#40  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-04 [SC] [expires: 2025-09-03]
+      E2392AB1C061C602B0F24987291A47B450B29752
+uid           [ unknown] Meongjin Ki <owen.ki.dev@gmail.com>
+sub   rsa4096 2023-09-04 [E] [expires: 2025-09-03]
+
+
+#41  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-05 [SC] [expires: 2025-09-04]
+      F8577B19707A849659F23DB4447D5652878498C7
+uid           [ unknown] Yoonchul Chung <yoonchul005@gmail.com>
+sub   rsa4096 2023-09-05 [E] [expires: 2025-09-04]
+
+
+#42  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-05 [SC] [expires: 2024-09-04]
+      CCE8BF5BA4CB2F50F7CE16DF5A5F8E1D04B7227E
+uid           [ unknown] 송동훈 <spah1879@gmail.com>
+sub   rsa4096 2023-09-05 [E] [expires: 2024-09-04]
+
+
+#43  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa3072 2023-09-05 [SCA] [expires: 2025-09-05]
+      70B63903D0BDCA670FBD2CE40AE9FAC3A7DAD0F3
+uid           [ unknown] Jungmin Yoon <lego37yoon@outlook.com>
+sub   rsa3072 2023-09-05 [E] [expires: 2025-09-05]
+
+
+#44  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-05 [SC] [expires: 2025-09-04]
+      FAC38F6C173913ED1F2ACA622EEC343A1F99FAC2
+uid           [ unknown] Juhyeong Ko <dury.ko@gmail.com>
+sub   rsa4096 2023-09-05 [E] [expires: 2025-09-04]
 
