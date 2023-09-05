@@ -352,3 +352,10 @@ pub  rsa4096 2023-09-05 [SC] [expires: 2025-09-04]
 uid           [ unknown] Juhyeong Ko <dury.ko@gmail.com>
 sub   rsa4096 2023-09-05 [E] [expires: 2025-09-04]
 
+
+#45  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)
+pub  rsa4096 2023-09-05 [SC] [expires: 2025-09-04]
+      2B9831EE24DEB8AFACBE78EB30BE8A78C026AA96
+uid           [ unknown] YoonJi LEE <rhaxlddbswl@naver.com>
+sub   rsa4096 2023-09-05 [E] [expires: 2025-09-04]
+
