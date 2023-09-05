@@ -68,4 +68,11 @@ OpenPGP Keysigning Party 는 각자의 OpenPGP 키에 대한 Web of Trust(신뢰
 
 ## 파일 목록
 
-> 추후 배포됩니다.
+- [ksp-uck23.txt](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20230909/ksp-uck23.txt)
+    - 워크시트 파일(참가자 공개키 정보, 체크섬 기입란 등 포함)
+- [ksp-uck23.txt.asc](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20230909/ksp-uck23.txt.asc)
+    - ksp-uck23.txt 파일을 GPG 키 `D8C8 103B 16C5 6E34 B56F 9A42 30B7 29F7 1213 8599` 로 clearsign 한 파일
+- [ksp-uck23.txt.sha256](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20230909/ksp-uck23.txt.sha256)
+    - ksp-uck23.txt 파일의 SHA256 체크섬을 기록한 파일
+- [ksp-uck23.txt.sha256.asc](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20230909/ksp-uck23.txt.sha256.asc)
+    - ksp-uck23.txt.sha256 파일을 GPG 키 `D8C8 103B 16C5 6E34 B56F 9A42 30B7 29F7 1213 8599` 로 clearsign 한 파일
