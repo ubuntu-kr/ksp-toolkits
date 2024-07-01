@@ -33,14 +33,6 @@ brew install gpg
 
 # 키 생성 하기
 
-- 먼저, `~/.gnupg/gpg.conf` 파일에, 아래와 같은 내용을 가장 마지막 줄에 추가합니다.
-    - 키 생성시 키의 해싱 알고리즘 기본값을 정하는 설정입니다.
-    - 해당 파일이 없는 경우, 새로 생성한 후 수정합니다.
-```
-personal-digest-preferences SHA512
-cert-digest-algo SHA512
-default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed
-```
 
 - 아래 명령으로, 키 생성을 시작합니다.
 ```bash
@@ -49,20 +41,26 @@ gpg --full-generate-key
 # GPG 2.1 이전 버전인 경우(Ubuntu 16.04 이전) gpg --gen-key
 ```
 
-- 키 유형은 RSA and RSA 로 합니다.
+- 키 유형은 ECC (sign and encrypt) 로 합니다.
 ```
 Please select what kind of key you want:
-   (1) RSA and RSA (default)
+   (1) RSA and RSA
    (2) DSA and Elgamal
    (3) DSA (sign only)
    (4) RSA (sign only)
-Your selection? 1
+   (9) ECC (sign and encrypt) *default*
+  (10) ECC (sign only)
+  (14) Existing key from card
+Your selection? 9
 ```
 
-- 키 길이는 최소 3072 이상으로 합니다. 4096을 권장합니다.
+- 타원곡선(elliptic curve) 알고리즘을 선택합니다. 기본값인 `Curve 25519`를 권장합니다.
 ```
-RSA keys may be between 1024 and 4096 bits long.
-What keysize do you want? (2048) 4096
+Please select which elliptic curve you want:
+   (1) Curve 25519 *default*
+   (4) NIST P-384
+   (6) Brainpool P-256
+Your selection? 1
 ```
 
 - 키 유효기간을 정합니다. 약 2년 안으로 하는 것을 권장합니다.
@@ -87,7 +85,7 @@ Email address: test@example.org
 Comment: 
 ```
 
-- 입력한 신원 정보 일치 여부를 확인합니다. 이후, 키가 생성 과정이 시작되는데, 랜담 바이트가 필요합니다. 웹 브라우징 등으로 랜덤 바이트 생성을 하면서 기다립니다.
+- 입력한 신원 정보 일치 여부를 확인합니다. 이후, 키가 생성 과정이 시작되는데, 랜덤 바이트가 필요합니다. 웹 브라우징 등으로 랜덤 바이트 생성을 하면서 기다립니다.
 ```
 You selected this USER-ID:
     "Test User <test@example.org>"
@@ -141,15 +139,6 @@ gpg --keyserver <키서버 주소> --send-keys <키ID_또는_핑거프린트>
 - 키서버에 올릴 항목을 우클릭 한 다음, `Publish on Server` 를 눌러 커서버에 업로드 합니다.
 
 ### Ubuntu, Debian (Seahorse)
-- 먼저, `~/.gnupg/gpg.conf` 파일에, 아래와 같은 내용을 가장 마지막 줄에 추가합니다.
-    - 키 생성시 키의 해싱 알고리즘 기본값을 정하는 설정입니다.
-    - 해당 파일이 없는 경우, 새로 생성한 후 수정합니다.
-
-```
-personal-digest-preferences SHA512
-cert-digest-algo SHA512
-default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed
-```
 
 - `+` 버튼을 눌러 키 생성을 시작합니다.   
 ![](images/linux-seahorse-1.png)
@@ -174,14 +163,6 @@ default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB
     - "키를 공개할 곳(P)" 에서 키를 업로드한 키서버를 선택합니다. 그리고 설정창을 닫습니다.
     - 업로드할 키 항목을 선택하고, 원격 > 키 동기화 및 공개(S)... 를 이용하여 업로드 합니다.
 ### MacOS
-- 먼저, `~/.gnupg/gpg.conf` 파일에, 아래와 같은 내용을 가장 마지막 줄에 추가합니다.
-    - 키 생성시 키의 해싱 알고리즘 기본값을 정하는 설정입니다.
-    - 해당 파일이 없는 경우, 새로 생성한 후 수정합니다.
-```
-personal-digest-preferences SHA512
-cert-digest-algo SHA512
-default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed
-```
 
 - GPG Suite 를 https://gpgtools.org/ 에서 내려받아 설치합니다. 
 - `New` 를 눌러 키를 생성합니다.
