@@ -21,7 +21,7 @@ OpenPGP Keysigning Party 는 각자의 OpenPGP 키에 대한 Web of Trust(신뢰
     - 키 생성 시 최신 버전의 GPG 명령줄에서 기본으로 사용하는 알고리즘인 `ECC (sign and encrypt) + Curve 25519` 유형을 권장 드립니다.
 - 공개키를 키서버에 업로드 합니다. 이번 행사에 참석 하시는 분들은, [keyserver.ubuntu.com](https://keyserver.ubuntu.com) 에 업로드 해주세요.
     - 키서버에 업로드 하는 방법은 [**동일한 문서(공개키 생성 가이드)에 같이 기술되어 있습니다.**](../../create-gpg-key.md)
-- 준비된 GPG 키의 16자리 핑거프린트를 [**이 제출 양식을 이용하여 제출합니다.**](https://docs.google.com/forms/d/e/1FAIpQLSe64-z1nSifLlybBVOC0TDFKoRc1hm8HOHiOhVMzb3I6p-sdw/viewform?usp=sf_link)
+- 준비된 PGP 키의 핑거프린트 전체(40자리)를 [**이 제출 양식을 이용하여 제출합니다.**](https://docs.google.com/forms/d/e/1FAIpQLSe64-z1nSifLlybBVOC0TDFKoRc1hm8HOHiOhVMzb3I6p-sdw/viewform?usp=sf_link)
     - 늦어도 **8월 5일 23시 59분(한국시간)** 까지 모두 제출해 주시기 바랍니다.
     - 양식을 통해 공개키를 제출하시면 양식 응답 사본을 이메일로 받으시게 되며, 받으신 메일을 통해 제출기간 동안 응답 수정이 가능합니다.
 
