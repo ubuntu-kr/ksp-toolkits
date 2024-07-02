@@ -2,7 +2,7 @@
 
 OpenPGP Keysigning Party 에 참여 하고자 하시는 분들은 다음과 같은 사항을 미리 준비하세요.  
 도움이 필요 하시거나 문의 사항이 있는 경우, 고민 하지 마시고 [youngbin@ubuntu-kr.org](mailto:youngbin@ubuntu-kr.org) 으로 바로 연락해 주세요.
-> 이번 키사이닝 파티는 UbuCon Korea 2024 프로그램의 일부로, 티켓 구입 하시고 오프라인으로 참여 하셔야 참여 가능합니다. [티켓은 여기에서 구입 가능합니다.](https://2023.ubuntu-kr.org/tickets/)
+> 이번 키사이닝 파티는 UbuCon Korea 2024 프로그램의 일부로, 티켓 구입 하시고 오프라인으로 참여 하셔야 참여 가능합니다. [티켓은 여기에서 구입 가능합니다.](https://2024.ubuntu-kr.org/tickets/)
 
 ## PGP, GPG? 키사이닝 파티(Keysigning Party)?
 PGP(Pretty Good Privacy) 는 이메일이나 파일 등을 암호화 하거나 전자서명을 할 수 있게 해 주는 공개키 암호화 방식을 사용하는 프로그램 입니다.
