@@ -15,7 +15,7 @@ OpenPGP Keysigning Party 는 각자의 OpenPGP 키에 대한 Web of Trust(신뢰
 
 ## 참가자 명단이 나오기 전
 
-> 문서 가이드만으로 이해 및 준비가 어려운 경우, [동영상 가이드](https://youtu.be/PrPxmbv8uHI)를 시청 하시면서 준비 해 보실 수 있습니다.
+> 문서 가이드만으로 이해 및 준비가 어려운 경우, [동영상 가이드](https://www.youtube.com/watch?v=nP5b5bRwZnw)를 시청 하시면서 준비 해 보실 수 있습니다.
 
 - OpenPGP 키를 준비하세요. 아직 강력한 키가 없다면, [**이 문서를 참고하여 새로 준비합니다.**](../../create-gpg-key.md)
     - 키 생성 시 최신 버전의 GPG 명령줄에서 기본으로 사용하는 알고리즘인 `ECC (sign and encrypt) + Curve 25519` 유형을 권장 드립니다.
