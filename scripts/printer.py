@@ -24,37 +24,34 @@ howto = """
 참여자 목록 / List of participants
 
 본 파일로 하셔야 할 일:
-1. 본 파일을 인쇄하세요.
-2. 본 파일의 SHA256 체크섬을 계산하세요.
-3. 본 파일과 같이 제공된 체크섬 파일에 있는 값과 비교합니다.
-4. 계산한 체크섬을 인쇄물의 체크섬 기록란에 씁니다.
-5. 인쇄물, 신분증, 필기구를 지참하여 행사에 참석합니다.
+1. 본 파일을 인쇄하세요. 2. 본 파일의 SHA256 체크섬을 계산하세요.
+3. 계산한 체크섬을 인쇄물의 체크섬 기록란에 씁니다.
+4. 인쇄물, 신분증, 필기구를 지참하여 키사이닝에 참석합니다.
 
 다른 키사이닝 파티 참여자를 만나셨을 때 하셔야 할 일:
-1. 서로 계산해 온 체크섬이 일치하는지 확인합니다.
-2. 목록에서의 서로의 번호를 확인하고, 목록에 있는 서로의 핑거프린트에 문제가 없는지 확인합니다.
-3. 목록상의 신원 정보와 상대방의 신원정보가 일치하는지 서로 유효한 신분증
-(정부기관 발급 신분증, 여권 등)을 제시하여 확인합니다.
-4. 신원을 충분히 확인 했다면, 인쇄물의 해당 항목에 체크표시 하여
-해당 항목의 GPG 핑거프린트와 신원을 확인했음을 표시합니다.
+1. 서로 계산해 온 체크섬이 일치하는지 확인합니다. 
+2. 목록에 있는 서로의 핑거프린트에 문제가 없는지 확인합니다.
+3. 목록상의 신원 정보와 상대방의 신원정보가 일치하는지 
+    서로 유효한 신분증 (정부기관 발급 신분증, 여권 등)을 제시하여 확인합니다.
+4. 신원을 충분히 확인 했다면, 인쇄물의 해당 항목에 
+    체크표시 하여 해당 항목의 PGP 핑거프린트와 신원을 확인했음을 표시합니다.
 
 Here's what you have to do with this file:
-1. Print this file to paper.
-2. Compute this file's SHA256 checksum
-3. fill in the hash values on the printout.
+1. Print this file to paper. 2. Compute this file's SHA256 checksum
+3. fill in the hash values on the printout. 
 4. Bring the printout, a pen, and proof of identity to the keysigning.
 
 For each participant:
-1. Compare the hash you computed with the other participant.
-2. Ask if the other participant's gpg fingerprint on the hardcopy is correct.
+1. Compare the hash you computed with the other participant. 
+2. Ask if the other participant's pgp fingerprint on the hardcopy is correct.
 3. Verify each other's identity by checking 
-valid ID(Government issued ID, Passport, etc.).
-4. If you are satisfied with the identification, mark on your hardcopy that
-the other participant's gpg fingerprint is correct and has been identified.
+    valid ID(Government issued ID, Passport, etc.).
+4. If you are satisfied with the identification, mark on your hardcopy 
+    that the other participant's pgp fingerprint is correct and has been identified.
 
 SHA256 Checksum / SHA256 체크섬 :
 
-____________________________________________________________________ [ ]
+______________________________________________________________________________ [ ]
 """
 
 if(len(sys.argv)!=5):
@@ -72,12 +69,15 @@ if(len(sys.argv)!=5):
         Installation of GPG CLI Program is required to use this script properly.
     """)
 else:
-    userInput = "{}\n{}\n행사 준비: {}\n\n".format(str(sys.argv[2]), str(sys.argv[3]), str(sys.argv[4]))
+    userInput = "{}: {}\n행사 준비: {}\n\n".format(str(sys.argv[2]), str(sys.argv[3]), str(sys.argv[4]))
     userInput += howto
     keyring_result = subprocess.run(['gpg', '--no-default-keyring','--keyring', str(sys.argv[1]), '--list-keys'], capture_output=True, text=True)
-    body = keyring_result.stdout.split('--------------------------------')[1]
+    body = keyring_result.stdout.split('------------------------------')[1]
     splited = body.split('pub ')
     for index, item in enumerate(splited):
         # print("=====================
-        userInput += "\n#{}  [ ] 핑거프린트 확인(Fingerprint OK)  [ ] 신원 확인(ID OK)\npub{}".format(index, item)
+        lines = item.split('\n')
+        if(len(lines)<3):
+            continue
+        userInput += f"\n#{index:02d} [ ] 신원 확인(ID OK) {lines[2].replace("uid           [ unknown]","")}\n    [ ] 핑거프린트 확인(Fingerprint OK){lines[1]}\n----------------------------------------"
     print(userInput)
