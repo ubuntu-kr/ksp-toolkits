@@ -36,10 +36,10 @@ OpenPGP Keysigning Party 는 각자의 OpenPGP 키에 대한 Web of Trust(신뢰
     - 실행 예시: `sha256sum ksp-20180915-2.txt`
     - 체크섬 일치 확인 실행 예시: `sha256sum ksp-20180915-2.txt | diff ksp-20180915-2.txt.sha256 -` (아무 내용도 뜨지 않아야 함)
 - 각 참가자 목록 파일에 대한 서명 파일(`*.txt.asc`)과 각 참가자 목록 파일의 체크섬 파일에 대한 서명 파일(`*.txt.sha256.asc`)의 서명이 올바른지 검증하세요.
-    - 서명을 검증하려면 먼저 서명에 쓰인 GPG 키의 공개키를 키서버에서 불러옵니다.
-        - 핑거프린트가 `22BE 5648 7B69 D6CD F99D 45AF ACFF 5149 B117 571E` 인 GPG 키로 서명될 예정이며, keyserver.ubuntu.com 에서 불러올 수 있습니다.
+    - 서명을 검증하려면 먼저 서명에 쓰인 PGP 키의 공개키를 키서버에서 불러옵니다.
+        - 핑거프린트가 `22BE 5648 7B69 D6CD F99D 45AF ACFF 5149 B117 571E` 인 PGP 키로 서명될 예정이며, keyserver.ubuntu.com 에서 불러올 수 있습니다.
         - `gpg --keyserver keyserver.ubuntu.com --recv-keys 22BE56487B69D6CDF99D45AFACFF5149B117571E`
-            - [해당 GPG 키 정보 보기](https://keyserver.ubuntu.com/pks/lookup?fingerprint=on&op=index&search=0x22BE56487B69D6CDF99D45AFACFF5149B117571E)
+            - [해당 PGP 키 정보 보기](https://keyserver.ubuntu.com/pks/lookup?fingerprint=on&op=index&search=0x22BE56487B69D6CDF99D45AFACFF5149B117571E)
     - Windows(Kleopatra) : Decrypt/Verify... 를 눌러서 검증할 파일을 열어 검증을 진행합니다.
     - MacOS(GPG Suite) : 검증할 파일을 우클릭 한 다음, 서비스 > OpenPGP: Verify Signature of File 를 눌러 진행합니다.
     - Linux: 
@@ -53,7 +53,7 @@ OpenPGP Keysigning Party 는 각자의 OpenPGP 키에 대한 Web of Trust(신뢰
     - 성인의 경우 주민등록증, 운전면허증, 여권 또는 정부기관이 발행한 본인의 사진과 실명이 포함된 신분증을 지참합니다.
     - 청소년의 경우 여권, 청소년증, 학생증 또는 정부기관이 발행한 본인의 사진과 실명이 포함된 신분증을 지참합니다.
     - 외국인의 경우 여권, 외국인 등록증 또는 국제학생증을 지참합니다.
-    - 신분증의 이름과 GPG 키에 있는 이름이 동일해야 합니다.
+    - 신분증의 이름과 PGP 키에 있는 이름이 동일해야 합니다.
 - 키사이닝 세션 시간에 다같이 체크섬을 확인합니다.
 - 돌아 다니면서 키사이닝을 교환할 분을 만납니다.
     - 체크섬을 확인합니다. 다같이 확인할 때 확인한 경우 건너뜁니다.
@@ -69,4 +69,13 @@ OpenPGP Keysigning Party 는 각자의 OpenPGP 키에 대한 Web of Trust(신뢰
 
 ## 파일 목록
 
-> 준비중 입니다.
+- [ksp-uck24-print](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20240810/ksp-uck24-print)
+    - 인쇄용 워크시트 PDF 파일(참가자 공개키 정보, 체크섬 기입란 등 포함)
+- [ksp-uck24.txt](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20240810/ksp-uck24.txt)
+    - 워크시트 파일(참가자 공개키 정보, 체크섬 기입란 등 포함)
+- [ksp-uck24.txt.asc](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20240810/ksp-uck24.txt.asc)
+    - ksp-uck24.txt 파일을 PGP 키 `22BE 5648 7B69 D6CD F99D 45AF ACFF 5149 B117 571E` 로 clearsign 한 파일
+- [ksp-uck24.txt.sha256](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20240810/ksp-uck24.txt.sha256)
+    - ksp-uck24.txt 파일의 SHA256 체크섬을 기록한 파일
+- [ksp-uck24.txt.sha256.asc](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20240810/ksp-uck24.txt.sha256.asc)
+    - ksp-uck24.txt.sha256 파일을 PGP 키 `22BE 5648 7B69 D6CD F99D 45AF ACFF 5149 B117 571E` 로 clearsign 한 파일
