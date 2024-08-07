@@ -71,7 +71,7 @@ OpenPGP Keysigning Party 는 각자의 OpenPGP 키에 대한 Web of Trust(신뢰
 
 ## 파일 목록
 
-- [ksp-uck24-print](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20240810/ksp-uck24-print)
+- [ksp-uck24-print.pdf](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20240810/ksp-uck24-print.pdf)
     - 인쇄용 워크시트 PDF 파일(참가자 공개키 정보, 체크섬 기입란 등 포함)
 - [ksp-uck24.txt](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20240810/ksp-uck24.txt)
     - 워크시트 파일(참가자 공개키 정보, 체크섬 기입란 등 포함)
