@@ -37,7 +37,7 @@ OpenPGP Keysigning Party 는 각자의 OpenPGP 키에 대한 Web of Trust(신뢰
     - 체크섬 일치 확인 실행 예시: `sha256sum ksp-20180915-2.txt | diff ksp-20180915-2.txt.sha256 -` (아무 내용도 뜨지 않아야 함)
 - 각 참가자 목록 파일에 대한 서명 파일(`*.txt.asc`)과 각 참가자 목록 파일의 체크섬 파일에 대한 서명 파일(`*.txt.sha256.asc`)의 서명이 올바른지 검증하세요.
     - 서명을 검증하려면 먼저 서명에 쓰인 PGP 키의 공개키를 키서버에서 불러옵니다.
-        - 핑거프린트가 `22BE 5648 7B69 D6CD F99D 45AF ACFF 5149 B117 571E` 인 PGP 키로 서명될 예정이며, keyserver.ubuntu.com 에서 불러올 수 있습니다.
+        - 핑거프린트가 `22BE 5648 7B69 D6CD F99D 45AF ACFF 5149 B117 571E` 인 PGP 키로 서명되어 있으며, keyserver.ubuntu.com 에서 불러올 수 있습니다.
         - `gpg --keyserver keyserver.ubuntu.com --recv-keys 22BE56487B69D6CDF99D45AFACFF5149B117571E`
             - [해당 PGP 키 정보 보기](https://keyserver.ubuntu.com/pks/lookup?fingerprint=on&op=index&search=0x22BE56487B69D6CDF99D45AFACFF5149B117571E)
     - Windows(Kleopatra) : Decrypt/Verify... 를 눌러서 검증할 파일을 열어 검증을 진행합니다.
@@ -46,6 +46,8 @@ OpenPGP Keysigning Party 는 각자의 OpenPGP 키에 대한 Web of Trust(신뢰
         - 다음 명령행을 실행하여 검증합니다.: `gpg --verify < (파일명)`
         - 실행 예시: `gpg --verify < ksp-20180915.txt.sha256.asc`
 - 체크섬이 일치하고, 서명이 올바르다면. 이제 참가자 목록 파일을 프린터로 인쇄합니다.
+    - 파일 목록에 있는 PDF 파일을 인쇄해도 무방합니다.
+    - 인쇄하는 것이 가장 좋지만, 그럴 여건이 안 된다면, 태블릿에서 PDF 파일을 열어 활용하는 방식도 무방합니다. 중요한 것은 체크섬 계산과 서명 검증을 수행을 완료하여 참석하는 것입니다.
 - 인쇄한 종이에 본인이 계산한 SHA256 체크섬을 펜으로 직접 옮겨 적습니다.
 
 ## 행사 당일
