@@ -2,19 +2,7 @@
 * 이 문서는 GPG 키를 생성하는 방법을 적은 가이드 문서입니다.
 
 # 패키지 설치하기
-## Ubuntu 16.04
-gpg 명령어 사용을 위한 패키지 설치
-```
-sudo apt install gnupg
-```
-
-## Ubuntu 18.04
-gpg 명령어 사용을 위한 패키지 설치
-```
-sudo apt install gnupg
-```
-
-## Debian, 혹은 다른 Debian 계열의 운영체제
+## Ubuntu 및 Debian 계열 리눅스 배포판
 gpg 명령어 사용을 위한 패키지 설치
 ```
 sudo apt install gnupg
