@@ -103,7 +103,7 @@ gpg --keyserver <키서버 주소> --send-keys <키ID_또는_핑거프린트>
 
 ## GUI 앱 사용
 
-### Windows (gpg3win - Kleopatra)
+### Windows (gpg4win - Kleopatra)
 - https://www.gpg4win.org/index.html 에서 프로그램을 받아 설치합니다.
 - Kelopatra 프로그램을 사용하겠습니다. 프로그램을 켜고, `New Key Pair` 버튼을 누릅니다.   
 ![](images/gpg-windows-1.png)
