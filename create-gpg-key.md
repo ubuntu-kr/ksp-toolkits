@@ -12,12 +12,15 @@ or
 sudo apt-get install gnupg
 ```
 
-## Mac OS X 
+## MacOS
 gpg 명령어 사용을 위한 패키지 설치
 Homebrew 를 사용하여 설치합니다.
 ```
 brew install gpg
 ```
+## Windows 
+아래 링크에서 설치 파일을 받아 Gpg4win을 설치 합니다.   
+https://www.gpg4win.org/
 
 # 키 생성 하기
 
