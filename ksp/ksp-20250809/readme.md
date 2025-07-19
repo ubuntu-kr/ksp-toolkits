@@ -9,9 +9,7 @@ PGP(Pretty Good Privacy) 는 이메일이나 파일 등을 암호화 하거나 �
 GPG(GNU Privacy Guard) 는 PGP 의 OpenPGP 표준의 자유/오픈소스 구현체이며 오늘날 대부분의 리눅스 배포판에서 사용 가능합니다.
 PGP(혹은 GPG) 는 이메일과 파일 암호화에도 많이 사용되지만, 오늘날 오픈소스 프로젝트에서 바이너리와 패키지 그리고 패치파일이나 커밋에 서명을 하여 본인이 한 작업물임을 보증되도록 하기 위해 사용 되기도 합니다.
 
-OpenPGP Keysigning Party 는 각자의 OpenPGP 키에 대한 Web of Trust(신뢰 망)을 구축하는 것을 목적으로 하는 행사입니다.
-참여자들이 서로의 신원을 꼼꼼히 확인한 후 서로의 OpenPGP 공개키에 서명을 해 주어 신뢰를 쌓는 형태입니다.
-우리가 진행하는 키사이닝 파티 방식은 [Phil Zimmermann과 Len Sassaman의 Hash Based Method Party](http://www.cryptnet.net/fdp/crypto/keysigning_party/en/keysigning_party.html#hash_based)에 기반하여 조금 변형한 형태 입니다.
+PGP 이외에 우리가 흔히 접하는 SSL/TLS 등 PKI 방식을 사용하는 방식은 인증기관이 있어, 여기서 인증서나 서명 등이 신뢰 할 만한 것인지 확인 해 줍니다. 하지만 PGP는 인증기관의 개념이 없어, PGP키를 만들어 사용하는 각 개인이 인증기관의 역할을 하고, 서로의 신원을 꼼꼼히 확인한 후 서로 키에 서명을 해 주어 인증을 해 주는 형태입니다. 이를 위해서 하는 활동이 OpenPGP Keysigning Party이며, 참여자들이 서로의 신원을 꼼꼼히 확인한 후 서로의 OpenPGP 공개키에 서명을 해 주어OpenPGP 키에 대한  Web of Trust(신뢰 망)을 구축하는 것을 목적으로 하는 행사입니다. 우리가 진행하는 키사이닝 파티 방식은 [Phil Zimmermann과 Len Sassaman의 Hash Based Method Party](http://www.cryptnet.net/fdp/crypto/keysigning_party/en/keysigning_party.html#hash_based)에 기반하여 조금 변형한 형태 입니다.
 
 ## 참가자 명단이 나오기 전
 
