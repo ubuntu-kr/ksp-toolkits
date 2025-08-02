@@ -68,4 +68,13 @@ PGP 이외에 우리가 흔히 접하는 SSL/TLS 등 PKI 방식을 사용하는 
 
 ## 파일 목록
 
-> 공개 예정
+- [ksp-uck25-print.pdf](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20250809/ksp-uck25-print.pdf)
+    - 인쇄용 워크시트 PDF 파일(참가자 공개키 정보, 체크섬 기입란 등 포함)
+- [ksp-uck25.txt](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20250809/ksp-uck25.txt)
+    - 워크시트 파일(참가자 공개키 정보, 체크섬 기입란 등 포함)
+- [ksp-uck25.txt.asc](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20250809/ksp-uck25.txt.asc)
+    - ksp-uck25.txt 파일을 PGP 키 `22BE 5648 7B69 D6CD F99D 45AF ACFF 5149 B117 571E` 로 clearsign 한 파일
+- [ksp-uck25.txt.sha256](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20250809/ksp-uck25.txt.sha256)
+    - ksp-uck25.txt 파일의 SHA256 체크섬을 기록한 파일
+- [ksp-uck25.txt.sha256.asc](https://raw.githubusercontent.com/ubuntu-kr/ksp-toolkits/master/ksp/ksp-20250809/ksp-uck25.txt.sha256.asc)
+    - ksp-uck25.txt.sha256 파일을 PGP 키 `22BE 5648 7B69 D6CD F99D 45AF ACFF 5149 B117 571E` 로 clearsign 한 파일
