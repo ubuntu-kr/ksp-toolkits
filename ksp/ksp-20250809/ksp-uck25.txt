@@ -124,7 +124,7 @@ ______________________________________________________________________________ [
 #30 [ ] 신원 확인(ID OK)  김성준 <redfox@yonsei.as.kr>
     [ ] 핑거프린트 확인(Fingerprint OK)      1F1CBC19AD31D61EDA848F880D99AD161F306D0D
 ----------------------------------------
-#31 [ ] 신원 확인(ID OK) uid           [ expired] LEE, Jong Hoon <gnsinfo@hooni.mooo.com>
+#31 [ ] 신원 확인(ID OK)  LEE, Jong Hoon <gnsinfo@hooni.mooo.com>
     [ ] 핑거프린트 확인(Fingerprint OK)      0C71082156107FFE5494CDDE58BCB230027A761B
 ----------------------------------------
 #32 [ ] 신원 확인(ID OK)  Lee Wonchan <wonchan@wonchan.net>
