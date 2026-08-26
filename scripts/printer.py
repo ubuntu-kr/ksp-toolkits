@@ -18,7 +18,8 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import subprocess, sys
+import subprocess
+import sys
 
 howto = """
 참여자 목록 / List of participants
@@ -54,8 +55,51 @@ SHA256 Checksum / SHA256 체크섬 :
 ______________________________________________________________________________ [ ]
 """
 
-if(len(sys.argv)!=5):
-    print("""
+def decode_gpg_field(value):
+    decoded = bytearray()
+    index = 0
+
+    while index < len(value):
+        if value[index:index + 2] == "\\x" and index + 3 < len(value):
+            try:
+                decoded.append(int(value[index + 2:index + 4], 16))
+                index += 4
+                continue
+            except ValueError:
+                pass
+        decoded.extend(value[index].encode("utf-8"))
+        index += 1
+
+    return decoded.decode("utf-8", errors="replace")
+
+
+def parse_keyring(output):
+    participants = []
+    current = None
+
+    for line in output.splitlines():
+        fields = line.split(":")
+        record_type = fields[0]
+
+        if record_type == "pub":
+            current = {"fingerprint": None, "uid": None}
+            participants.append(current)
+        elif current is not None and record_type == "fpr" and current["fingerprint"] is None:
+            current["fingerprint"] = fields[9]
+        elif current is not None and record_type == "uid" and current["uid"] is None:
+            current["uid"] = decode_gpg_field(fields[9])
+
+    if not participants:
+        raise ValueError("the keyring contains no public keys")
+    if any(not participant["fingerprint"] or not participant["uid"] for participant in participants):
+        raise ValueError("a public key is missing a fingerprint or user ID")
+
+    return participants
+
+
+def main():
+    if len(sys.argv) != 5:
+        print("""
         사용 방법:
         python3 printer.py (공개키 보관된 Keyring 이름) (행사 제목(워크시트 제목)) (부제목) (행사 준비자 정보) > (파일명).txt
         예: python3 printer.py ksprings.gpg "우분투한국커뮤니티 9월 서울지역 세미나" "GPG Keysigning Party" "한영빈(Youngbin Han)<sukso96100@gmail.com>" > list.txt
@@ -67,17 +111,52 @@ if(len(sys.argv)!=5):
         Example: python3 printer.py ksprings.gpg "우분투한국커뮤니티 9월 서울지역 세미나" "GPG Keysigning Party" "한영빈(Youngbin Han)<sukso96100@gmail.com>" > list.txt
 
         Installation of GPG CLI Program is required to use this script properly.
-    """)
-else:
+        """)
+        return 1
+
     userInput = "{}: {}\n행사 준비: {}\n\n".format(str(sys.argv[2]), str(sys.argv[3]), str(sys.argv[4]))
     userInput += howto
-    keyring_result = subprocess.run(['gpg', '--no-default-keyring','--keyring', str(sys.argv[1]), '--list-keys'], capture_output=True, text=True)
-    body = keyring_result.stdout.split('------------------------------')[1]
-    splited = body.split('pub ')
-    for index, item in enumerate(splited):
-        # print("=====================
-        lines = item.split('\n')
-        if(len(lines)<3):
-            continue
-        userInput += f"\n#{index:02d} [ ] 신원 확인(ID OK) {lines[2].replace("uid           [ unknown]","")}\n    [ ] 핑거프린트 확인(Fingerprint OK){lines[1]}\n----------------------------------------"
+
+    try:
+        keyring_result = subprocess.run(
+            [
+                "gpg",
+                "--no-default-keyring",
+                "--keyring",
+                sys.argv[1],
+                "--with-colons",
+                "--fixed-list-mode",
+                "--fingerprint",
+                "--list-keys",
+            ],
+            capture_output=True,
+            text=True,
+        )
+    except FileNotFoundError:
+        print("Error: GPG is not installed or is not available on PATH.", file=sys.stderr)
+        return 1
+
+    if keyring_result.returncode != 0:
+        message = keyring_result.stderr.strip() or "unknown GPG error"
+        print(f"Error: unable to read keyring '{sys.argv[1]}': {message}", file=sys.stderr)
+        return keyring_result.returncode
+
+    try:
+        participants = parse_keyring(keyring_result.stdout)
+    except (IndexError, ValueError) as error:
+        print(f"Error: unable to parse keyring '{sys.argv[1]}': {error}", file=sys.stderr)
+        return 1
+
+    for index, participant in enumerate(participants, start=1):
+        fingerprint = " ".join(
+            participant["fingerprint"][offset:offset + 4]
+            for offset in range(0, len(participant["fingerprint"]), 4)
+        )
+        userInput += f"\n#{index:02d} [ ] 신원 확인(ID OK) {participant['uid']}\n    [ ] 핑거프린트 확인(Fingerprint OK) {fingerprint}\n----------------------------------------"
+
     print(userInput)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
